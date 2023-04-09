@@ -121,15 +121,16 @@ public class TechJobs {
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
 //        System.out.println("printJobs is not implemented yet");
         if (someJobs.size() == 0) {
-            System.out.println("No Results");
+            System.out.print("No Results");
+            return;
         } else {
-            for (HashMap<String, String> job : someJobs) {
-                System.out.println("\n*****");
-                for (Map.Entry<String, String> data : job.entrySet()) {
-                    System.out.println(data.getKey() + ": " + data.getValue());
-                }
-                System.out.println("*****");
-            }
+             for (HashMap<String, String> job : someJobs) {
+              System.out.println("\n*****");
+                   for (Map.Entry<String, String> data : job.entrySet()) {
+                     System.out.println(data.getKey() + ": " + data.getValue());
+                   }
+            System.out.println("*****");
+          }
         }
     }
 }
